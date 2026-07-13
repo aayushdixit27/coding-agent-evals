@@ -1,0 +1,10 @@
+# Harbor run outputs
+jobs/
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
