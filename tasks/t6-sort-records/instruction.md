@@ -34,6 +34,6 @@ Example:
 - `sort_records(records)`: takes the list, returns the sorted list.
 
 A sample smoke test is provided at `/app/test_visible.py`
-(`python3 -m pytest /app/test_visible.py`). Passing it is necessary but **not
+(`python3 /app/test_visible.py`). Passing it is necessary but **not
 sufficient** — your function is graded on the full spec above, over inputs not
 shown here.
