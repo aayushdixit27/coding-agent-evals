@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784328852.0140657,
+            "stop": 1784328852.0239513
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_parse_line",
+                "status": "passed",
+                "duration": 0.0005098339999847212,
+                "start": 1784328852.0203235,
+                "stop": 1784328852.0210006,
+                "retries": 6,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::label,line,expected::[('comment_plain', '# foo', None), ('comment_leading_space', '   # bar', None), ('comment_with_equals', '#key=val', None), ('trim_key_value', 'key = value', ('key', 'value')), ('split_first_equals', 'a=b=c', ('a', 'b=c')), ('empty_value', 'empty =', ('empty', '')), ('inline_hash_kept', 'mode = # default', ('mode', '# default'))]"
+                ]
+            }
+        ]
+    }
+}

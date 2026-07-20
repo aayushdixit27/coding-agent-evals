@@ -1,0 +1,137 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 13,
+            "passed": 13,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784245572.823689,
+            "stop": 1784245572.8442035
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_neither_supplied_uses_defaults",
+                "status": "passed",
+                "duration": 0.0005361259999290269,
+                "start": 1784245572.8342454,
+                "stop": 1784245572.8350282,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_default_does_not_count_as_supplied",
+                "status": "passed",
+                "duration": 0.0007499170000073718,
+                "start": 1784245572.8351853,
+                "stop": 1784245572.836192,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_only_mode_flag_ok",
+                "status": "passed",
+                "duration": 0.0004892509998626338,
+                "start": 1784245572.8363528,
+                "stop": 1784245572.8370113,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_only_preset_flag_ok",
+                "status": "passed",
+                "duration": 0.00044729299986556725,
+                "start": 1784245572.837122,
+                "stop": 1784245572.8377628,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_equals_form",
+                "status": "passed",
+                "duration": 0.0003985830001056456,
+                "start": 1784245572.8378847,
+                "stop": 1784245572.8383937,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_mode_from_env_ok",
+                "status": "passed",
+                "duration": 0.00032812500001000444,
+                "start": 1784245572.8384757,
+                "stop": 1784245572.8389108,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_flag_beats_env",
+                "status": "passed",
+                "duration": 0.0003411249999771826,
+                "start": 1784245572.8389845,
+                "stop": 1784245572.8394248,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_both_flags_conflict",
+                "status": "passed",
+                "duration": 0.0005167929998606269,
+                "start": 1784245572.839518,
+                "stop": 1784245572.8401904,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_env_and_flag_conflict",
+                "status": "passed",
+                "duration": 0.0004699579999396519,
+                "start": 1784245572.8402631,
+                "stop": 1784245572.8408666,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_both_env_conflict",
+                "status": "passed",
+                "duration": 0.0004580000002079032,
+                "start": 1784245572.8409798,
+                "stop": 1784245572.8415935,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_explicit_value_equal_to_default_still_supplied",
+                "status": "passed",
+                "duration": 0.00042908299985811027,
+                "start": 1784245572.841698,
+                "stop": 1784245572.8422816,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_unknown_option_raises",
+                "status": "passed",
+                "duration": 0.0008356249999224019,
+                "start": 1784245572.8424037,
+                "stop": 1784245572.8433974,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_help_text_mentions_exclusion",
+                "status": "passed",
+                "duration": 0.00040304099991317344,
+                "start": 1784245572.843502,
+                "stop": 1784245572.8440194,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

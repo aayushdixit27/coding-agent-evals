@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784241655.102644,
+            "stop": 1784241655.1675644
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_range_expand",
+                "status": "passed",
+                "duration": 0.008240915999977005,
+                "start": 1784241655.1082704,
+                "stop": 1784241655.116766,
+                "retries": 7,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::inp,expected::[('1-3,5', '1 2 3 5'), ('3-5,1,4-6', '1 3 4 5 6'), ('10,2,1-3', '1 2 3 10'), ('5,5,5', '5'), ('2-4, 3 , 1', '1 2 3 4'), ('1,2,', '1 2'), ('42', '42'), ('', '')]"
+                ]
+            }
+        ]
+    }
+}

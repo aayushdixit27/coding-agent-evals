@@ -1,0 +1,41 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 2,
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784242358.0420918,
+            "stop": 1784242358.0644386
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_order",
+                "status": "passed",
+                "duration": 0.0005546680000065862,
+                "start": 1784242358.0599465,
+                "stop": 1784242358.0606763,
+                "retries": 6,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::label,records::[('mixed', [{'name': 'Ann', 'dept': 'eng', 'salary': 100}, {'name': 'Bob', 'dept': 'sales', 'salary': 90}, {'name': 'Cy', 'dept': 'eng', 'salary': 120}, {'name': 'Di', 'dept': 'eng', 'salary': 100}]), ('desc_within_dept', [{'name': 'A', 'dept': 'eng', 'salary': 80}, {'name': 'B', 'dept': 'eng', 'salary': 120}, {'name': 'C', 'dept': 'eng', 'salary': 100}]), ('full_ties_stable', [{'name': 'Zoe', 'dept': 'eng', 'salary': 100}, {'name': 'Amy', 'dept': 'eng', 'salary': 100}]), ('empty', []), ('single', [{'name': 'Solo', 'dept': 'eng', 'salary': 42}]), ('already_sorted', [{'name': 'A', 'dept': 'eng', 'salary': 120}, {'name': 'B', 'dept': 'eng', 'salary': 90}, {'name': 'C', 'dept': 'sales', 'salary': 50}]), ('reverse_sorted', [{'name': 'C', 'dept': 'sales', 'salary': 50}, {'name': 'B', 'dept': 'eng', 'salary': 90}, {'name': 'A', 'dept': 'eng', 'salary': 120}])]"
+                ]
+            },
+            {
+                "name": "test_outputs.py::test_no_mutation",
+                "status": "passed",
+                "duration": 0.00026529100000516337,
+                "start": 1784242358.0639522,
+                "stop": 1784242358.0642936,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

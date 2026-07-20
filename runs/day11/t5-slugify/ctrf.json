@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784245903.024802,
+            "stop": 1784245903.037454
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_slugify",
+                "status": "passed",
+                "duration": 0.0005677919999698133,
+                "start": 1784245903.0306354,
+                "stop": 1784245903.031406,
+                "retries": 10,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::raw,expected::[('The Quick Brown Fox', 'the-quick-brown-fox'), ('Hello, World!', 'hello-world'), ('double  spaces  here', 'double-spaces-here'), ('Rock & Roll', 'rock-roll'), ('already-clean-slug', 'already-clean-slug'), ('C++', 'c'), ('  Trim Me  ', 'trim-me'), ('', ''), ('!!!', ''), ('Multiple---Hyphens', 'multiple-hyphens'), ('Mixed_Underscore Case', 'mixed-underscore-case')]"
+                ]
+            }
+        ]
+    }
+}

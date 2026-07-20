@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784248987.6085107,
+            "stop": 1784248987.6212673
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_round_half_even",
+                "status": "passed",
+                "duration": 0.0004362500000070213,
+                "start": 1784248987.6141953,
+                "stop": 1784248987.6147776,
+                "retries": 12,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::label,x,expected::[('half_0_5', 0.5, 0), ('half_1_5', 1.5, 2), ('half_2_5', 2.5, 2), ('half_3_5', 3.5, 4), ('half_4_5', 4.5, 4), ('half_neg_0_5', -0.5, 0), ('half_neg_1_5', -1.5, -2), ('half_neg_2_5', -2.5, -2), ('nontie_2_4', 2.4, 2), ('nontie_2_6', 2.6, 3), ('nontie_neg_2_6', -2.6, -3), ('int_5', 5.0, 5), ('int_0', 0.0, 0)]"
+                ]
+            }
+        ]
+    }
+}
