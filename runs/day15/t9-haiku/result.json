@@ -1,0 +1,111 @@
+{
+    "id": "ec4051ea-8883-4fb3-98f7-fc9d45ce00e1",
+    "task_name": "coding-agent-evals/round-half-even-ambiguous",
+    "trial_name": "t9-round-half-even-ambiguous__2doKABX",
+    "trial_uri": "file:///Users/aayushdixit/dev/coding-agent-evals/jobs/2026-07-20__19-37-33/t9-round-half-even-ambiguous__2doKABX",
+    "task_id": {
+        "path": "tasks/t9-round-half-even-ambiguous"
+    },
+    "source": "tasks",
+    "task_checksum": "3c4ad41b35ee492219a37d2416dc152c34258d8ade0a197cce36da3979586b5e",
+    "config": {
+        "task": {
+            "path": "tasks/t9-round-half-even-ambiguous",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "t9-round-half-even-ambiguous__2doKABX",
+        "trials_dir": "jobs/2026-07-20__19-37-33",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "claude-haiku-4-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "efafe4b1-1690-4b6b-a85e-da9f632d2031"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.216",
+        "model_info": {
+            "name": "claude-haiku-4-5",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 117557,
+        "n_cache_tokens": 110818,
+        "n_output_tokens": 2187,
+        "cost_usd": 0.0354618,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-21T02:37:34.226537Z",
+    "finished_at": "2026-07-21T02:40:45.950780Z",
+    "environment_setup": {
+        "started_at": "2026-07-21T02:37:34.270417Z",
+        "finished_at": "2026-07-21T02:37:37.438905Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-21T02:37:37.439088Z",
+        "finished_at": "2026-07-21T02:39:56.639414Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-21T02:39:56.639986Z",
+        "finished_at": "2026-07-21T02:40:28.267056Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-21T02:40:29.179046Z",
+        "finished_at": "2026-07-21T02:40:34.971293Z"
+    },
+    "step_results": null
+}

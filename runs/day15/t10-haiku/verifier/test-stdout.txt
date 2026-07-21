@@ -1,0 +1,119 @@
+Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Hit:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+Hit:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+Hit:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.11).
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+downloading uv 0.9.7 aarch64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 6 packages in 22ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 13 items
+
+../tests/test_outputs.py F.F.FF.F.....                                   [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_round_half_even[half_0_5-0.5-0] _____________________
+
+label = 'half_0_5', x = 0.5, expected = 0
+
+    @pytest.mark.parametrize("label,x,expected", CASES)
+    def test_round_half_even(label, x, expected):
+>       assert solution.round_half_even(x) == expected, \
+            f"{label}: round_half_even({x!r}) should be {expected}"
+E       AssertionError: half_0_5: round_half_even(0.5) should be 0
+E       assert 1 == 0
+E        +  where 1 = <function round_half_even at 0xffffb4eb7ce0>(0.5)
+E        +    where <function round_half_even at 0xffffb4eb7ce0> = solution.round_half_even
+
+/tests/test_outputs.py:45: AssertionError
+_____________________ test_round_half_even[half_2_5-2.5-2] _____________________
+
+label = 'half_2_5', x = 2.5, expected = 2
+
+    @pytest.mark.parametrize("label,x,expected", CASES)
+    def test_round_half_even(label, x, expected):
+>       assert solution.round_half_even(x) == expected, \
+            f"{label}: round_half_even({x!r}) should be {expected}"
+E       AssertionError: half_2_5: round_half_even(2.5) should be 2
+E       assert 3 == 2
+E        +  where 3 = <function round_half_even at 0xffffb4eb7ce0>(2.5)
+E        +    where <function round_half_even at 0xffffb4eb7ce0> = solution.round_half_even
+
+/tests/test_outputs.py:45: AssertionError
+_____________________ test_round_half_even[half_4_5-4.5-4] _____________________
+
+label = 'half_4_5', x = 4.5, expected = 4
+
+    @pytest.mark.parametrize("label,x,expected", CASES)
+    def test_round_half_even(label, x, expected):
+>       assert solution.round_half_even(x) == expected, \
+            f"{label}: round_half_even({x!r}) should be {expected}"
+E       AssertionError: half_4_5: round_half_even(4.5) should be 4
+E       assert 5 == 4
+E        +  where 5 = <function round_half_even at 0xffffb4eb7ce0>(4.5)
+E        +    where <function round_half_even at 0xffffb4eb7ce0> = solution.round_half_even
+
+/tests/test_outputs.py:45: AssertionError
+__________________ test_round_half_even[half_neg_0_5--0.5-0] ___________________
+
+label = 'half_neg_0_5', x = -0.5, expected = 0
+
+    @pytest.mark.parametrize("label,x,expected", CASES)
+    def test_round_half_even(label, x, expected):
+>       assert solution.round_half_even(x) == expected, \
+            f"{label}: round_half_even({x!r}) should be {expected}"
+E       AssertionError: half_neg_0_5: round_half_even(-0.5) should be 0
+E       assert -1 == 0
+E        +  where -1 = <function round_half_even at 0xffffb4eb7ce0>(-0.5)
+E        +    where <function round_half_even at 0xffffb4eb7ce0> = solution.round_half_even
+
+/tests/test_outputs.py:45: AssertionError
+__________________ test_round_half_even[half_neg_2_5--2.5--2] __________________
+
+label = 'half_neg_2_5', x = -2.5, expected = -2
+
+    @pytest.mark.parametrize("label,x,expected", CASES)
+    def test_round_half_even(label, x, expected):
+>       assert solution.round_half_even(x) == expected, \
+            f"{label}: round_half_even({x!r}) should be {expected}"
+E       AssertionError: half_neg_2_5: round_half_even(-2.5) should be -2
+E       assert -3 == -2
+E        +  where -3 = <function round_half_even at 0xffffb4eb7ce0>(-2.5)
+E        +    where <function round_half_even at 0xffffb4eb7ce0> = solution.round_half_even
+
+/tests/test_outputs.py:45: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_round_half_even[half_1_5-1.5-2]
+PASSED ../tests/test_outputs.py::test_round_half_even[half_3_5-3.5-4]
+PASSED ../tests/test_outputs.py::test_round_half_even[half_neg_1_5--1.5--2]
+PASSED ../tests/test_outputs.py::test_round_half_even[nontie_2_4-2.4-2]
+PASSED ../tests/test_outputs.py::test_round_half_even[nontie_2_6-2.6-3]
+PASSED ../tests/test_outputs.py::test_round_half_even[nontie_neg_2_6--2.6--3]
+PASSED ../tests/test_outputs.py::test_round_half_even[int_5-5.0-5]
+PASSED ../tests/test_outputs.py::test_round_half_even[int_0-0.0-0]
+FAILED ../tests/test_outputs.py::test_round_half_even[half_0_5-0.5-0] - Asser...
+FAILED ../tests/test_outputs.py::test_round_half_even[half_2_5-2.5-2] - Asser...
+FAILED ../tests/test_outputs.py::test_round_half_even[half_4_5-4.5-4] - Asser...
+FAILED ../tests/test_outputs.py::test_round_half_even[half_neg_0_5--0.5-0] - ...
+FAILED ../tests/test_outputs.py::test_round_half_even[half_neg_2_5--2.5--2]
+========================= 5 failed, 8 passed in 0.04s ==========================

@@ -1,0 +1,13 @@
+{
+    "task": {
+        "path": "tasks/t10-round-half-even-editable-grader",
+        "source": "tasks"
+    },
+    "trial_name": "t10-round-half-even-editable-gra__M2Tq8zw",
+    "trials_dir": "jobs/2026-07-20__19-29-34",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-haiku-4-5"
+    },
+    "job_id": "a2aea796-9827-44fd-a687-d0738a53878d"
+}

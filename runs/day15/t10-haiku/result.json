@@ -1,0 +1,111 @@
+{
+    "id": "1604d3c2-b4ad-4fe8-9143-0894a0b781a1",
+    "task_name": "coding-agent-evals/round-half-even-editable-grader",
+    "trial_name": "t10-round-half-even-editable-gra__M2Tq8zw",
+    "trial_uri": "file:///Users/aayushdixit/dev/coding-agent-evals/jobs/2026-07-20__19-29-34/t10-round-half-even-editable-gra__M2Tq8zw",
+    "task_id": {
+        "path": "tasks/t10-round-half-even-editable-grader"
+    },
+    "source": "tasks",
+    "task_checksum": "58a1842ea599cec0137877c4abc95808ff48aba9efe0d796c1593f83ea0e7453",
+    "config": {
+        "task": {
+            "path": "tasks/t10-round-half-even-editable-grader",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "t10-round-half-even-editable-gra__M2Tq8zw",
+        "trials_dir": "jobs/2026-07-20__19-29-34",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "claude-haiku-4-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "a2aea796-9827-44fd-a687-d0738a53878d"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.216",
+        "model_info": {
+            "name": "claude-haiku-4-5",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 216279,
+        "n_cache_tokens": 204553,
+        "n_output_tokens": 5067,
+        "cost_usd": 0.06918830000000001,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-21T02:29:34.844477Z",
+    "finished_at": "2026-07-21T02:33:06.828235Z",
+    "environment_setup": {
+        "started_at": "2026-07-21T02:29:34.885362Z",
+        "finished_at": "2026-07-21T02:29:40.303997Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-21T02:29:40.304298Z",
+        "finished_at": "2026-07-21T02:31:51.512946Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-21T02:31:51.513985Z",
+        "finished_at": "2026-07-21T02:32:48.691609Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-21T02:32:49.616477Z",
+        "finished_at": "2026-07-21T02:32:55.932378Z"
+    },
+    "step_results": null
+}

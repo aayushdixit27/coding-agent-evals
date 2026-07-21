@@ -1,0 +1,13 @@
+{
+    "task": {
+        "path": "tasks/t9-round-half-even-ambiguous",
+        "source": "tasks"
+    },
+    "trial_name": "t9-round-half-even-ambiguous__2doKABX",
+    "trials_dir": "jobs/2026-07-20__19-37-33",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-haiku-4-5"
+    },
+    "job_id": "efafe4b1-1690-4b6b-a85e-da9f632d2031"
+}
