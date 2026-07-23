@@ -1,0 +1,13 @@
+{
+    "task": {
+        "path": "tasks/t11-round-half-even-spec-judged",
+        "source": "tasks"
+    },
+    "trial_name": "t11-round-half-even-spec-judged__B9xVhvC",
+    "trials_dir": "jobs/2026-07-22__16-18-11",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-haiku-4-5"
+    },
+    "job_id": "bb4602e9-5afd-42fa-993c-172029581951"
+}

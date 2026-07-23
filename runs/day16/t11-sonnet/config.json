@@ -1,0 +1,13 @@
+{
+    "task": {
+        "path": "tasks/t11-round-half-even-spec-judged",
+        "source": "tasks"
+    },
+    "trial_name": "t11-round-half-even-spec-judged__CnAtk9p",
+    "trials_dir": "jobs/2026-07-22__16-36-52",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-sonnet-5"
+    },
+    "job_id": "93465441-6222-4cdd-b56c-5fd4c0f57924"
+}
