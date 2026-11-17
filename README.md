@@ -1,7 +1,5 @@
 # coding-agent-evals
 
-Red-team-grade eval rigor for AI coding agents, where "passed" is not "correct."
-
 ## The problem
 
 As more code is written by AI coding agents, one question matters more: when an agent's work passes the test, did it solve the problem or just satisfy the check?
@@ -39,4 +37,4 @@ A task ships only when both hold. The oracle earns a pass, and the lazy solution
 
 ## Status
 
-This is being built in public over roughly two weeks. The first task has landed: T1, range-expand, a capability task that establishes the hidden-verifier format, with the three headline traps (too loose, too shallow, plain wrong) coming next. It is one of a planned roster of eight, and more will follow as they clear the validation gate.
+Status (2026-11-17): Days 1 to 17 are on the record under `runs/`; the latest results are in `runs/day17/RESULTS.md`. Being closed out today with one last pre-registered experiment and a full rewrite of this page.
