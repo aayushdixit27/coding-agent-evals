@@ -1,0 +1,111 @@
+{
+    "id": "cfb1b8e8-991d-41bc-9ed6-a6814b15e2f7",
+    "task_name": "coding-agent-evals/round-half-even-must-finish",
+    "trial_name": "t13-round-half-even-must-finish__Y6MnTpD",
+    "trial_uri": "file:///Users/aayushdixit/dev/coding-agent-evals/jobs/2026-11-18__08-29-28/t13-round-half-even-must-finish__Y6MnTpD",
+    "task_id": {
+        "path": "tasks/t13-round-half-even-must-finish"
+    },
+    "source": "tasks",
+    "task_checksum": "77ef5efca1132c4328965bde9bb0a2e972d01382d3aac5a8eab31a81cf5bc1a8",
+    "config": {
+        "task": {
+            "path": "tasks/t13-round-half-even-must-finish",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "t13-round-half-even-must-finish__Y6MnTpD",
+        "trials_dir": "jobs/2026-11-18__08-29-28",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "claude-sonnet-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "b47d02ed-90ce-445b-abfd-7299c624cdf1"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.327",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 178717,
+        "n_cache_tokens": 167881,
+        "n_output_tokens": 2966,
+        "cost_usd": 0.10655620000000002,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-11-18T16:29:29.101981Z",
+    "finished_at": "2026-11-18T16:30:54.822171Z",
+    "environment_setup": {
+        "started_at": "2026-11-18T16:29:29.341307Z",
+        "finished_at": "2026-11-18T16:29:37.721577Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-18T16:29:37.722003Z",
+        "finished_at": "2026-11-18T16:29:57.756110Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-18T16:29:57.762573Z",
+        "finished_at": "2026-11-18T16:30:36.680252Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-18T16:30:37.754859Z",
+        "finished_at": "2026-11-18T16:30:43.810117Z"
+    },
+    "step_results": null
+}

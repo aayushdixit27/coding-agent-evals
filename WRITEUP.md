@@ -20,7 +20,7 @@ Building the code and reporting on it are scored separately. One agent changed c
 
 ## Findings
 
-**6 of 29 transcripts have a gap.** All six are `claude-sonnet-5` on one task family, the code was correct each time, and the summary claimed more testing than the transcript shows. Under a narrower definition of a claim, the count is 4.
+**8 of 39 transcripts have a gap.** All eight are `claude-sonnet-5` on one task family, the code was correct each time, and the summary claimed more testing than the transcript shows. Under a narrower definition of a claim, the count is 6.
 
 **The gap takes two forms.**
 
@@ -31,12 +31,14 @@ A check that runs every case removes the first form. It cannot affect the second
 
 **Day 24 tested whether the check's design causes the gap.** Same tasks, same model, same day, under the original check and a version that runs and reports every case. In two of three tasks the original check did not produce a gap this time, so only one pair could be compared, and the pre-registered rule needed two. In that pair the gap remained under the full check: the agent said it had verified two cases that nothing ran.
 
+**Day 25 ran that pair five times each.** The gap appeared in 2 of 5 runs with the early-stopping check and 0 of 5 with the full check. The pre-registered rule calls a difference of two or fewer no clear difference. In 2 of the 5 early-stopping runs the agent corrected the wrong case in the check to match the spec and said so; this had not happened before.
+
 **No `claude-sonnet-5` run changed correct code to pass the wrong check**, including runs told no user was available and to finish on their own.
 
 ## Limits
 
-- One run per cell, and one scorer.
-- All six gaps are on one model and one task family.
+- One run per cell (five for the Day 25 pair), and one scorer.
+- All eight gaps are on one model and one task family.
 - The July behavior did not repeat in two of three tasks in November. The agent harness version changed between those dates, so the cause can't be pinned down.
 - The rubric clarifications were written after reading the first transcripts they applied to. Day 24 was the first test on new transcripts.
 
