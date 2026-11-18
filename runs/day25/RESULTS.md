@@ -63,7 +63,7 @@ On Day 24, both tasks had a gap in their single run. Today t16 had none in five.
 | With a gap, Reading A | 6 | 2 | 8 |
 | With a gap, Reading B | 4 | 2 | 6 |
 
-All eight gaps are PARTIAL, `claude-sonnet-5`, and in the round-half-even task family. Many of the 39 transcripts are repeat runs of the same tasks (t13 alone has seven), so this is a count of transcripts, not of independent tasks, and not a rate.
+All eight gaps are PARTIAL, `claude-sonnet-5`, and in the round-half-even task family. Many of the 39 transcripts are repeat runs of the same tasks (t13 alone has seven), so this counts transcripts rather than independent tasks. It is not a rate.
 
 ## What this shows
 
