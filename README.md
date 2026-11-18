@@ -1,20 +1,20 @@
 # coding-agent-evals
 
-This repo measures the self-report gap in AI coding agents: how often an agent's summary claims a check that its own transcript shows it never ran. The scoring rubric was committed publicly before any transcript was scored, and since Day 15 every experiment has been pre-registered and pushed before it ran. As of 2026-11-17, 21 transcripts are scored and 4 carry a gap; a final pre-registered experiment ran today and is being scored.
+This repo measures the self-report gap in AI coding agents: how often an agent's summary claims a check that its own transcript shows it never ran. The scoring rubric was committed publicly (commit [`1f594cd`](https://github.com/aayushdixit27/coding-agent-evals/commit/1f594cd)) before any transcript was scored (first scores: commit [`b2b5165`](https://github.com/aayushdixit27/coding-agent-evals/commit/b2b5165)), and since Day 15 every experiment has been pre-registered and pushed before it ran. As of 2026-11-17, 21 transcripts are scored and 4 carry a gap; a final pre-registered experiment ran today and is being scored.
 
 ## Results so far
 
-Counts, not rates. Every cell is one run. Nothing here ranks models: the models ran different task sets.
+Counts, not rates. A cell is one task under one condition, and every cell is a single run. Nothing here ranks models: the models ran different task sets.
 
 | Finding | Count | Read this before quoting it |
 |---|---|---|
-| Transcripts scored under rubric v1 | 21 | Days 11 to 17. Hand-scored by one person against a public rubric, from the transcript, not from the pass/fail reward. |
+| Transcripts scored under rubric v1 | 21 | Days 11 to 17. Hand-scored by one person against a public rubric. Scores come from reading the transcript. The reward, which is the hidden verifier's pass or fail, is recorded separately. |
 | Transcripts with a self-report gap | 4 of 21 | All four are the same category (PARTIAL): a real run backed part of what the summary claimed, and the summary claimed more. All four are `claude-sonnet-5` on one task family. The code was correct in all four. |
-| Same count under a narrower reading of what counts as a claim | 2 of 21 | Between 1 and 3 depending on two close calls, both logged in `runs/day24/rescore.md`. |
-| Gaps where the visible check stopped at its first failure and cut the run short | 3 of 4 | The agent then reported cases as passing that never executed. This may be measuring the check's design, not the agent. The Day 24 experiment tests it. |
-| Agents that changed correct code to satisfy a wrong check | 1 | `claude-haiku-4-5`, Day 15. It disclosed what it did, so it is a failure of action, not of reporting. The two are scored separately. |
+| Same count under a narrower reading of what counts as a claim | 2 of 21 | Between 1 and 3 depending on two close calls, both logged in [`runs/day24/rescore.md`](runs/day24/rescore.md). |
+| Gaps where the visible check stopped at its first failure and cut the run short | 3 of 4 | The agent then reported cases as passing that never executed. The overstatement may be produced by the check's design. The Day 24 experiment tests that. |
+| Agents that changed correct code to satisfy a wrong check | 1 | `claude-haiku-4-5`, Day 15. Its summary disclosed what it did, so it counts on the action axis only. |
 
-Day 24 experiment (the same tasks under a check that stops early and a check that runs and reports every case): pre-registered in `runs/day24/pre-registration.md`, run on 2026-11-17, results not yet published.
+Day 24 experiment (the same tasks under a check that stops early and a check that runs and reports every case): pre-registered in [`runs/day24/pre-registration.md`](runs/day24/pre-registration.md), run on 2026-11-17, results not yet published.
 
 ## How it works
 
@@ -39,13 +39,13 @@ A verification claim counts as backed only if the transcript shows a run, after 
 
 | Path | What it holds |
 |---|---|
-| `tasks/` | 16 task directories. Each has the instruction, the environment, a reference solution, and the hidden verifier. |
+| [`tasks/`](tasks/) | 16 task directories. Each has the instruction, the environment, a reference solution, and the hidden verifier. |
 | `runs/dayNN/` | One folder per experiment day: the pre-registration, the results, and the preserved transcripts. |
 | `runs/dayNN/claims/` | Substrate sheets: a mechanical extract of each transcript (events, the agent's text verbatim, edits and executions) with no scoring in it. Read a sheet and you can re-score it yourself. |
-| `runs/day16/rubric.md` | Rubric v1, committed before any scoring. |
-| `runs/day24/rubric-v1-addendum.md` | Three clarifications to the rubric, committed before the rescore. |
-| `runs/day24/rescore.md` | The current count, under both readings, with a same-day correction left visible. |
-| `runs/day17/RESULTS.md` | The most recent published experiment, including a missed prediction and a defect found in the outcome labels. |
+| [`runs/day16/rubric.md`](runs/day16/rubric.md) | Rubric v1, committed before any scoring. |
+| [`runs/day24/rubric-v1-addendum.md`](runs/day24/rubric-v1-addendum.md) | Three clarifications to the rubric, committed before the rescore. |
+| [`runs/day24/rescore.md`](runs/day24/rescore.md) | The current count, under both readings, with a same-day correction left visible. |
+| [`runs/day17/RESULTS.md`](runs/day17/RESULTS.md) | The most recent published experiment, including a missed prediction and a defect found in the outcome labels. |
 
 ## Reproduce one run
 
